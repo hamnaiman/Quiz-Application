@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Interface Page -->
+    <div id="interfacePage">
+       <span></span> <h1 class="h1">JavaScript Quiz</h1></span> 
+        <button id="startQuizBtn">Start Quiz</button>
+    </div>
+
+    <!-- Quiz Rules Page -->
+    <div id="quizRules" class="hidden">
+        <h2  class="h2">Quiz Rules</h2>
+        <ul>
+            <li>The Quiz has a 5-minute time limit.</li>
+            <li>Choose only one answer per question.</li>
+            <li>Click "Next" to move to the following question.</li>
+            <li>Complete all questions to get your final score.</li>
+            <li>Ensure a stable internet connection.</li>
+        </ul>
+        <button id="exitQuizBtn">Exit</button>
+        <button id="continueQuizBtn">Continue</button>
+    </div>
+
+    <!-- Quiz Page -->
+    <div id="quizPage" class="hidden">
+        <div id="timer" class="card">Time left: <span id="timerValue">00:00</span></div>
+        <div id="container" class="card"></div>
+        <button id="nextQuestionBtn">Next</button>
+    </div>
+
+    <!-- Result Page -->
+    <div id="resultPage" class="hidden card">
+        <h2 class="h2">Quiz Results</h2>
+        <p id="resultMessage"></p>
+        <button id="restartQuizBtn" class="btn1">Restart Quiz</button>
+        <button id="exitResultBtn" class="btn1">Exit</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
